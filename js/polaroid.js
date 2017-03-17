@@ -6,12 +6,12 @@
 		
 		if(this.length > 1) {
 			this.forEach(function() {
-				$(this).polaroid(param);
+				this.polaroid(param);
 			});
 			return;
 		}
 		
-		var self = $(this),
+		var self = this,
 			items = self.children(),
 			rotate = 0,
 			options = $.extend({
